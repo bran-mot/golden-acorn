@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import logo from './logo.svg';
 import './App.css';
-import PropTypes from 'prop-types';
-import App from './components/Application';
-import { BrowserRouter } from "react-router-dom";
-import SimpleAcornApp from './components/SimpleAcornApp';
+import App from './components/Home';
+import NavigationBar from './components/NavigationBar';
+import {
+	BrowserRouter as Router
+} from 'react-router-dom';
 
 ReactDOM.render(
-  <BrowserRouter>
-      <SimpleAcornApp />
-  </BrowserRouter>
-  ,
+  <Router>
+      <NavigationBar />
+  </Router>,
   document.getElementById("root")
 );
 
